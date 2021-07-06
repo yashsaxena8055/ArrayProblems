@@ -1,0 +1,44 @@
+
+//  Time  Complexity is O(n)
+
+
+package com.company;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.sql.SQLOutput;
+
+public class Main {
+
+    public static void main(String[] args)throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n;
+        //size of array
+        n =Integer.parseInt(br.readLine());
+        int arr[]= new int[n];
+
+        //taking input elements of array separated by space
+
+        String str[]= br.readLine().split(" ");
+
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=Integer.parseInt(str[i]);
+        }
+        int first=0,end=n-1,temp=0;
+       while(first<end)
+       {
+           temp =arr[end];
+           arr[end]=arr[first];
+           arr[first]=temp;
+           first++;
+           end--;
+       }
+
+       //printing the reversed array
+        for(int i=0;i<n;i++)
+            System.out.print(arr[i]+" ");
+    }
+}
