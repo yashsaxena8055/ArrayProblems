@@ -1,4 +1,4 @@
 # ArrayProblems
-#Categorise from Easy to hard.
+#Categorize from Easy to hard.
 
 
