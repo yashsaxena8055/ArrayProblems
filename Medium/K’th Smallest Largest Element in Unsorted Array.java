@@ -69,7 +69,8 @@
 		
 		BuildHeap(arr);
 		int min=0;
-		for(int i=0;i<2;i++)
+		int k=3;
+		for(int i=0;i<k;i++)
 		{
 		    min =ExtractMin(arr);
 		    	
